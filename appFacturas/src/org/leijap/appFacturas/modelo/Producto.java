@@ -33,6 +33,7 @@ public class Producto {
     public void setPrecio(float precio) {
         this.precio = precio;
     }
+<<<<<<< HEAD
 
     @Override
     public String toString() {
@@ -40,4 +41,6 @@ public class Producto {
                 "\t" + nombre +
                 "\t" + precio;
     }
+=======
+>>>>>>> 652a7569e0ddf56d37ea274370873e092694a8ae
 }

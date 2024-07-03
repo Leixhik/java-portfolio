@@ -94,6 +94,7 @@ public class Factura {
             if (item == null){
                 continue;
             }
+<<<<<<< HEAD
 //            sb.append(item.getProducto().getCodigo())
 //                    .append("\t")
 //                    .append(item.getProducto().getNombre())
@@ -105,6 +106,17 @@ public class Factura {
 //                    .append(item.calcularImporte())
 //                    .append("\n");
             sb.append(item)
+=======
+            sb.append(item.getProducto().getCodigo())
+                    .append("\t")
+                    .append(item.getProducto().getNombre())
+                    .append("\t")
+                    .append(item.getProducto().getPrecio())
+                    .append("\t")
+                    .append(item.getCantidad())
+                    .append("\t")
+                    .append(item.calcularImporte())
+>>>>>>> 652a7569e0ddf56d37ea274370873e092694a8ae
                     .append("\n");
         }
         sb.append("\nGran Total: ")
@@ -112,9 +124,12 @@ public class Factura {
 
         return sb.toString();
     }
+<<<<<<< HEAD
 
     @Override
     public String toString() {
         return generarDetalle();
     }
+=======
+>>>>>>> 652a7569e0ddf56d37ea274370873e092694a8ae
 }

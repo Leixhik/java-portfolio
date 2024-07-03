@@ -7,6 +7,21 @@ public class Persona {
     private String email;
 
     // Métodos
+<<<<<<< HEAD
+=======
+
+    public Persona(){
+        System.out.println("Persona: inicializando constructor.");
+    }
+    public Persona(String nombre, String apellido){ //Sobrecarga de Método 1
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+    public Persona(String nombre, String apellido, int edad){ //Sobrecarga de Método 2
+        this(nombre, apellido);
+        this.edad = edad;
+    }
+>>>>>>> 652a7569e0ddf56d37ea274370873e092694a8ae
     public String getNombre() {
         return nombre;
     }
@@ -38,4 +53,11 @@ public class Persona {
     public void setEmail(String email) {
         this.email = email;
     }
+<<<<<<< HEAD
+=======
+
+    public String saludar(){
+        return "Hola que tal!";
+    }
+>>>>>>> 652a7569e0ddf56d37ea274370873e092694a8ae
 }
