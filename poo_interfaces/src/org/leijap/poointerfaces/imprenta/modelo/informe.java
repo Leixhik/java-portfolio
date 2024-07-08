@@ -1,11 +1,11 @@
 package org.leijap.poointerfaces.imprenta.modelo;
 
-public class informe extends Hoja{
+public class Informe extends Hoja{
     private String autor;
     private String revisor;
 
 
-    public informe(String autor, String revisor, String contenido) {
+    public Informe(String autor, String revisor, String contenido) {
         super(contenido);
         this.autor = autor;
         this.revisor = revisor;
@@ -14,7 +14,7 @@ public class informe extends Hoja{
     @Override
     public String imprimir() {
         return "Informe escrito por: " + autor
-                + "Revisador por: " + revisor
+                + " Revisador por: " + revisor
                 + "\n" + this.contenido;
     }
 }
