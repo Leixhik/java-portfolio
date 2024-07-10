@@ -3,6 +3,8 @@ package org.leijap.poointerfaces.imprenta;
 import org.leijap.poointerfaces.imprenta.modelo.*;
 
 import static org.leijap.poointerfaces.imprenta.modelo.Genero.*;
+import static org.leijap.poointerfaces.imprenta.modelo.Imprimible.imprimir;
+import static org.leijap.poointerfaces.imprenta.modelo.Imprimible.TEXTO_DEFECTO;
 
 
 public class EjemploImprenta {
@@ -30,9 +32,14 @@ public class EjemploImprenta {
         imprimir(cv);
         imprimir(informe);
         imprimir(libro);
-    }
 
-    public static void imprimir(Imprimible imprimible) {
-        System.out.println(imprimible.imprimir());
+        Imprimible objImpr = new Imprimible(){
+            @Override
+            public String imprimir() {
+                return "Hola que tal, imprimiendo un objeto genérico de una clase manual.";
+            }
+        };
+
+        System.out.println(TEXTO_DEFECTO); //Imprimiendo un valor x defecto
     }
 }
